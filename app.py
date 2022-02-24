@@ -1,19 +1,19 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[3]:
 
 
 from flask import Flask
 
 
-# In[2]:
+# In[4]:
 
 
 app = Flask(__name__)
 
 
-# In[3]:
+# In[5]:
 
 
 from flask import request, render_template
@@ -33,7 +33,7 @@ def index():
         s = "The predicted credit card default is: " + str(pred)
         return(render_template("index.html", result=s))
     else:
-        return(render_template("index.html", result="2"))
+        return(render_template("index.html", result="Credit Card Default Prediction"))
 
 
 # In[ ]:
